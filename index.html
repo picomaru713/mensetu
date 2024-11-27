@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>面接採点ツール</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>面接採点ツール</h1>
+
+    <!-- コミュニケーション能力 -->
+    <section>
+      <h2>1. コミュニケーション能力（10点）</h2>
+      <label><input type="checkbox" class="score" value="2"> 話し方が明瞭（2点）</label><br>
+      <label><input type="checkbox" class="score" value="3"> 論理的な説明ができる（3点）</label><br>
+      <label><input type="checkbox" class="score" value="5"> 非言語表現が適切（5点）</label>
+    </section>
+
+    <!-- 志望動機・自己PR -->
+    <section>
+      <h2>2. 志望動機・自己PRの内容（10点）</h2>
+      <label><input type="checkbox" class="score" value="4"> 志望動機が具体的（4点）</label><br>
+      <label><input type="checkbox" class="score" value="3"> 自己PRが説得力ある（3点）</label><br>
+      <label><input type="checkbox" class="score" value="3"> ポジティブな姿勢（3点）</label>
+    </section>
+
+    <!-- 人柄・態度 -->
+    <section>
+      <h2>3. 人柄・態度（10点）</h2>
+      <label><input type="checkbox" class="score" value="4"> 礼儀・マナーが正しい（4点）</label><br>
+      <label><input type="checkbox" class="score" value="3"> 積極性・協調性がある（3点）</label><br>
+      <label><input type="checkbox" class="score" value="3"> 柔軟性・適応力がある（3点）</label>
+    </section>
+
+    <!-- 合計スコア -->
+    <div class="total">
+      <h2>合計スコア: <span id="total-score">0</span> / 30点</h2>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
